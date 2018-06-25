@@ -7,6 +7,6 @@ export default {
   },
   // Saves a fortune to the database
   saveBook: function(fortuneData) {
-    return axios.post("/api/fortunes", bookData);
+    return axios.post("/api/fortunes", fortuneData);
   }
 };
