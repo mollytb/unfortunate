@@ -5,15 +5,10 @@
   "dependencies": {
     "async": "^2.6.1",
     "mongoose": "^5.1.6",
-    "parallel": "^1.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "parallel": "^1.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node server",
+    "build": "cd client && npm run build"
   }
 }
