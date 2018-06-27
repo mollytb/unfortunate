@@ -5,10 +5,7 @@ mongoose.Promise = global.Promise;
 // This file empties the Fortunes collection and inserts the Fortunes below
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactunfortunate",
-  {
-    useMongoClient: true
-  }
+  process.env.MONGODB_URI || "mongodb://localhost/reactunfortunate"
 );
 
 const fortuneSeed = [
@@ -34,7 +31,7 @@ db.Fortune
   .remove({})
   .then(() => db.Fortune.collection.insertMany(fortuneSeed))
   .then(data => {
-    console.log(data.insertedIds.length + " records inserted!");
+    console.log(data.insertedCount + " records inserted!");
     process.exit(0);
   })
   .catch(err => {
