@@ -7,12 +7,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 100;
-  animation: App-logo-spin infinite 30s linear;
+  /*animation: App-logo-spin infinite 30s linear;*/
   height: 600px;
 }
 
 .App-header {
+  opacity: .4;
   background-image: url("./red_5.jpg");
+  background-color: rgb(133, 36, 36);
   background-size: cover;
   padding: 20px;
   color: white;
