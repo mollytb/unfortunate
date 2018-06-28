@@ -8,13 +8,16 @@ class App extends Component {
     return (
       <div className="App">
       <NavBar />
-        <header className="App-header">
-          <h1 className="App-title">Unfortunate Cookies</h1>
-          <img src={logo} className="App-logo" alt="logo" />
+      <body className="App-header">
+        <header>
+          
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+        <div className="Cookie">
+          <img src={logo} className="App-logo" alt="logo" />
+          </div>
+        <p>
         </p>
+        </body>
       </div>
     );
   }

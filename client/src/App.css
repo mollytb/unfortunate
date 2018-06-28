@@ -19,15 +19,16 @@
   padding: 20px;
   color: white;
 }
+.Cookie {
+  
+}
 
 .App-title {
   font-size: 2.5em;
   color: black;
 }
 
-.App-intro {
-  font-size: large;
-}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
