@@ -2,16 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100;
-  /*animation: App-logo-spin infinite 30s linear;*/
-  height: 600px;
-}
-
-.App-header {
+.Body {
   opacity: .4;
   background-image: url("./red_5.jpg");
   background-color: rgb(133, 36, 36);
@@ -20,7 +11,7 @@
   color: white;
 }
 .Cookie {
-  
+
 }
 
 .App-title {

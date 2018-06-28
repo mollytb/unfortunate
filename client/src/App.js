@@ -9,12 +9,9 @@ class App extends Component {
     return (
       <div className="App">
       <NavBar />
-      <body className="App-header">
-        <header>
-          
-        </header>
+      <body className="Body">
         <div className="Cookie">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} alt="logo" />
           </div>
         <p>
         </p>
