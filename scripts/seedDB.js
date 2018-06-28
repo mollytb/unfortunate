@@ -28,7 +28,7 @@ const fortuneSeed = [
 ];
 
 db.Fortune
-  .remove({})
+  .remove({}) 
   .then(() => db.Fortune.collection.insertMany(fortuneSeed))
   .then(data => {
     console.log(data.insertedCount + " records inserted!");
