@@ -11,7 +11,7 @@ class App extends Component {
       <NavBar />
       <body className="Body">
         <div className="Cookie">
-          <img src={logo} alt="logo" />
+          <img src={logo} class="img-fluid" alt="logo" />
           </div>
         <p>
         </p>
