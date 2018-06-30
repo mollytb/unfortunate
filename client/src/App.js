@@ -15,6 +15,7 @@ class App extends Component {
           <img src={logo} class="img-fluid" alt="logo" />
           </div>
         <p>
+<<<<<<< HEAD
         </p>
         </body>
         <Footer />
@@ -26,6 +27,11 @@ class App extends Component {
 
 
 >>>>>>> Stashed changes
+=======
+        </p>
+        </body>
+        <Footer />
+>>>>>>> parent of 31c3d9f... Merge remote-tracking branch 'origin/master'
       </div>
     );
   }
