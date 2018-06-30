@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Cookie from "./components/Cookie";
+import BrokenCookie from "./components/BrokenCookie";
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
       <p className="App-title">Click for your fortune
         </p>
       <Cookie /> 
+      
+      <BrokenCookie />
       
       
       </div>
