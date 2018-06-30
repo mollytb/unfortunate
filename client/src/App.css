@@ -8,38 +8,23 @@
   color: white;
 }
 
-.Body {
-  opacity: .4;
-  background-image: url("./red_5.jpg");
-  background-color: rgb(133, 36, 36);
-  background-size: cover;
-  padding: 20px;
-  color: white;
-}
-.Cookie {
-  opacity: 1;
-  
 
 
-}
 
 .App-title {
   font-size: 2.5em;
   color: black;
 }
 .footer {
+  height: 50px;
+  margin-top: -50px;
   width: 100%;
   padding: 1rem;
   margin: .5rem 1rem;
   text-align: center;
-  transition: 200ms;
-  &:hover {
-    box-shadow: 0 0 2rem gray;
+
   }
-}
-.push {
-  height: 50px;
-}
+
 
 
 @keyframes App-logo-spin {
