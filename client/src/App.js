@@ -8,6 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+<<<<<<< Updated upstream
       <NavBar />
       <body className="Body">
         <div className="Cookie">
@@ -17,6 +18,14 @@ class App extends Component {
         </p>
         </body>
         <Footer />
+=======
+      <NavBar />anyone reading this?
+        </p>
+
+        <Footer />
+
+
+>>>>>>> Stashed changes
       </div>
     );
   }
