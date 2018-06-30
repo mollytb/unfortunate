@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from 
+import NavBar from "../components/NavBar";
 import API from "../../utils/API";
 
 class Fortune extends Component {
@@ -14,4 +14,13 @@ class Fortune extends Component {
         .then(res => this.setState({ fortune: res.data}))
         .catch(err=> console.log(err));
     }
+    render () {
+        return (
+            <div> 
+                <NavBar />
+
+            </div>
+        );
+    }
 }
+export default Fortune;
