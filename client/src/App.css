@@ -7,6 +7,9 @@ body, html {
 background{
   height: 100%;
   text-align: center;
+}
+
+.Body {
   opacity: .4;
   background-position: center;
   background-image: url("./red_5.jpg");
@@ -29,9 +32,11 @@ background{
   
   margin: .5rem 1rem;
   text-align: center;
-
+  transition: 200ms;
+  &:hover {
+    box-shadow: 0 0 2rem gray;
   }
-
+}
 
 
 @keyframes App-logo-spin {

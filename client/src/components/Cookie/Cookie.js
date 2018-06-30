@@ -1,4 +1,5 @@
 //stuff for cookie component
+<<<<<<< HEAD
 import logo from './fortune_cookie_whole.png';
 import React from "react";
 import "./Cookie.css"
@@ -9,3 +10,5 @@ const Cookie = () => (
     </div>
 )
 export default Cookie;
+=======
+>>>>>>> master
