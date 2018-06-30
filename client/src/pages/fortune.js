@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import API from "../../utils/API";
-import { Input, TextArea, FormBtn } from "../../components/Form";
+import { Input, FormBtn } from "../../components/Form";
 
 class Fortune extends Component {
     state = {
