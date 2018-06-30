@@ -1,6 +1,14 @@
-.App {
+body, html {
+  height: 100%;
+}
+.App-body {
+
+}
+background{
+  height: 100%;
   text-align: center;
   opacity: .4;
+  background-position: center;
   background-image: url("./red_5.jpg");
   background-color: rgb(133, 36, 36);
   background-size: cover;
@@ -10,16 +18,15 @@
 
 
 
-
 .App-title {
   font-size: 2.5em;
   color: black;
 }
 .footer {
-  height: 50px;
+  height: 5px;
   margin-top: -50px;
   width: 100%;
-  padding: 1rem;
+  
   margin: .5rem 1rem;
   text-align: center;
 

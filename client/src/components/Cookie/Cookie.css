@@ -1,6 +1,15 @@
-.Cookie {
-  
-  
+
+.size{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+
+}.Cookie {
+    position: center;
+    height: auto, center;
+    width: 150px, center;
 
 
 }
