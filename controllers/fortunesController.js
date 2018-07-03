@@ -14,11 +14,11 @@ module.exports = {
       var query = { state: 'OK' };
       var n = db.fortunes.count(query);
       var r = Math.floor(Math.random() * n);
-      var randomElement = db.fortunes.find(req.query).limit(1).skip(r);
-        // .find(req.query)
+      var randomElement = db.fortunes.find(req.query).limit(1).skip(r)
+        .find(req.query)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err))
-        console.log("TEST----> " randomElement);
+        console.log("TEST----> " + randomElement);
   },
 
   create: function(req, res) {
