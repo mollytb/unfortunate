@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../components/Form";
 
-class Fortune extends Component {
+class CreateFortune extends Component {
     state = {
         fortunes: []
     };
@@ -27,12 +27,13 @@ class Fortune extends Component {
         API.saveFortune({
           fortune: this.state.fortune
         })
-          .then(res => this.//response
+          .then(res => this.loadFortune())
           .catch(err => console.log(err));
       }
     };
     render () {
         return (
+          <div>
             <div>
                 <NavBar />
 
@@ -52,7 +53,8 @@ class Fortune extends Component {
                 </FormBtn>
               </form>
             </div>
+          </div>
         );
     }
 }
-export default Fortune;
+export default CreateFortune;
