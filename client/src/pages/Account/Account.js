@@ -14,7 +14,11 @@ class Account extends Component {
           <NavBar />
           <p className="App-title">Account page! Change me!
             </p>
-          <BrokenCookie />
+          <div>
+              <p>Create a New Unfortune? Is that going on this page at all?</p>
+              <p>Your Unfortunes</p>
+              <p>Favorite Unfortunes</p>
+          </div>
         
           </div>
            <Footer />

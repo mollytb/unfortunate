@@ -8,9 +8,9 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 
 import './App.css';
-import Footer from "./components/Footer";
-import Cookie from "./components/Cookie";
-import BrokenCookie from "./components/BrokenCookie";
+//import Footer from "./components/Footer";
+//import Cookie from "./components/Cookie";
+//import BrokenCookie from "./components/BrokenCookie";
 
 const App = () => (
   <Router>
