@@ -12,10 +12,13 @@ class Home extends Component {
         <div>
           <div className="App">
           <NavBar />
-          <p className="App-title">Click for your fortune
+          <p className="App-title">Click the cookie...
             </p>
           <Cookie />
-        
+          <p className="App-title">Create your own...
+            </p>
+          <Input />
+          <FormBtn />
           </div>
            <Footer />
          </div>

@@ -1,8 +1,15 @@
 body, html {
   height: 100%;
 }
+.App-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
 .App-body {
-  opacity: 4;
+  opacity: 9;
   background-position: center;
   background-image: url("./red_5.jpg");
   background-color: rgb(133, 36, 36);
@@ -10,6 +17,7 @@ body, html {
   padding: 20px;
   color: white;
 }
+
 background{
   height: 100%;
   text-align: center;
@@ -25,23 +33,24 @@ background{
   color: white;
 }
 
-
-
 .App-title {
   font-size: 2.5em;
   color: black;
 }
 
-
-.footer {
-  bottom:0px;
-  position: relative;
-  top: 5px;
-  width:100%;}
-
-
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
 }
