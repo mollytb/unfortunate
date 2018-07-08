@@ -6,6 +6,40 @@ import API from "../../utils/API";
 import { Input, FormBtn } from "../../components/Form";
 
 class Home extends Component {
+  state = {
+    fortunes: [],
+    fortune: "",
+  };
+
+  componentDidMount() {
+    this.loadFortune();
+  }
+
+  loadFortune = () => {
+    API.getFortune()
+      .then(res =>
+        this.setState({fortunes: res.data, fortune:"" })
+      )
+      .catch(err => console.log(err));
+  };
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.fortune) {
+      API.saveFortune({
+        fortune: this.state.fortune
+      })
+        .then(res => this.loadFortune())
+        .catch(err => console.log(err));
+    }
+  };
 
     render() {
         return (
@@ -17,11 +51,27 @@ class Home extends Component {
           <Cookie />
           <p className="App-title">Create your own...
             </p>
-          <Input />
-          <FormBtn />
+        <div>
+          <form>
+            <Input
+              value={this.state.fortune}
+              onChange={this.handleInputChange}
+              name="fortune"
+              placeholder="Some cynical wit (required)"
+              />
+            <FormBtn
+              disabled={!(this.state.fortune)}
+              onClick={this.handleFormSubmit}
+              >
+                Submit Fortune
+              </FormBtn>
+          </form>
+        </div>
+          <div>
+            <Footer />
           </div>
-           <Footer />
          </div>
+       </div>
         );
       }
 }

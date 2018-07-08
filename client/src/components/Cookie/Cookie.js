@@ -7,5 +7,6 @@ const Cookie = () => (
     <div className="Cookie">
     <img className="size" src={logo}  alt="logo" />
     </div>
+
 )
 export default Cookie;

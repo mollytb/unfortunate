@@ -9,7 +9,6 @@ body, html {
 }
 
 .App-body {
-  opacity: 9;
   background-position: center;
   background-image: url("./red_5.jpg");
   background-color: rgb(133, 36, 36);
@@ -21,20 +20,11 @@ body, html {
 background{
   height: 100%;
   text-align: center;
-}
-
-.Body {
-  opacity: .4;
-  background-position: center;
-  background-image: url("./red_5.jpg");
-  background-color: rgb(133, 36, 36);
-  background-size: cover;
-  padding: 20px;
-  color: white;
+  opacity: 0.5;
 }
 
 .App-title {
-  font-size: 2.5em;
+  font-size: 2em;
   color: black;
 }
 
