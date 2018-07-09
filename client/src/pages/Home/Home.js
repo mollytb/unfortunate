@@ -49,23 +49,8 @@ class Home extends Component {
           <p className="App-title">Click the cookie...
             </p>
           <Cookie />
-          <p className="App-title">Create your own...
-            </p>
+          
         <div>
-          <form>
-            <Input
-              value={this.state.fortune}
-              onChange={this.handleInputChange}
-              name="fortune"
-              placeholder="Some cynical wit (required)"
-              />
-            <FormBtn
-              disabled={!(this.state.fortune)}
-              onClick={this.handleFormSubmit}
-              >
-                Submit Fortune
-              </FormBtn>
-          </form>
         </div>
           <div>
             <Footer />

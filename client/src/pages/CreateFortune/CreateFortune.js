@@ -11,7 +11,7 @@ class CreateFortune extends Component {
         this.loadFortune();
     };
     loadFortune = () => {
-        API.getFortunes()
+        API.getFortune()
         .then(res => this.setState({ fortune: res.data}))
         .catch(err=> console.log(err));
     };
@@ -39,19 +39,22 @@ class CreateFortune extends Component {
 
             </div>
             <div>
-              <form>
-                <Input
-                  value={this.state.fortune}
-                  onChange={this.handleInputChange}
-                  name="fortune"
-                  placeholder="Fortune"
-                />
-                <FormBtn
-                  onClick={this.handleFormSubmit}
-                >
-                  Create Fortune
-                </FormBtn>
-              </form>
+            <p className="App-title">Create your own...
+            </p>
+            <form>
+            <Input
+              value={this.state.fortune}
+              onChange={this.handleInputChange}
+              name="fortune"
+              placeholder="Some cynical wit (required)"
+              />
+            <FormBtn
+              disabled={!(this.state.fortune)}
+              onClick={this.handleFormSubmit}
+              >
+                Submit Fortune
+              </FormBtn>
+          </form>
             </div>
           </div>
         );
