@@ -20,8 +20,8 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/Fortune" component={Fortune} />
-        <Route exact path="/account" component={Account} />
-        <Route exact path="/createFortune" component={CreateFortune} />
+        <Route exact path="/Account" component={Account} />
+        <Route exact path="/CreateFortune" component={CreateFortune} />
         <Route component={Home} />
       </Switch>
     </div>
