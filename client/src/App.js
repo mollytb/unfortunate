@@ -6,6 +6,7 @@ import CreateFortune from "./pages/CreateFortune";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
+import Fortune from "./pages/Fortune";
 
 import './App.css';
 //import Footer from "./components/Footer";
@@ -18,6 +19,7 @@ const App = () => (
   
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/Fortune" component={Fortune} />
         <Route exact path="/account" component={Account} />
         <Route exact path="/createFortune" component={CreateFortune} />
         <Route component={Home} />
