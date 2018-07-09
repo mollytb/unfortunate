@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 import API from "../../utils/API";
+import Footer from "../../components/Footer";
 import { Input, FormBtn } from "../../components/Form";
 
 class CreateFortune extends Component {
@@ -56,6 +57,7 @@ class CreateFortune extends Component {
               </FormBtn>
           </form>
             </div>
+          <Footer />
           </div>
         );
     }
