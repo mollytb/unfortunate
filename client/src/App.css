@@ -48,4 +48,9 @@ a:hover
 .card {
   color: black;
   margin-bottom: 10px; 
+  background-color: beige;
+}
+
+.navbar {
+  background-color: beige; 
 }
