@@ -27,12 +27,6 @@ class Account extends Component {
                 <p className="card-text">Fortunes you've created will display here</p>
               </div>
             </div>
-
-            <div className="card">
-            <h5 className="card-header">Create new Unfortune</h5>
-       
-            <p>add button and connect FormBtn here?? </p>
-            </div>
           </div>
           </div>
           <Footer />

@@ -49,12 +49,15 @@ class CreateFortune extends Component {
                 <label for="exampleFormControlInput1">Email address</label>
                 <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
               </div>
+            <div className="card-body">
+              <p className="card-text">Fortune text</p>
             <Input
               value={this.state.fortune}
               onChange={this.handleInputChange}
               name="fortune"
               placeholder="Some cynical wit (required)"
               />
+            </div>
             <FormBtn
               disabled={!(this.state.fortune)}
               onClick={this.handleFormSubmit}
