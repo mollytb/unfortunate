@@ -42,7 +42,13 @@ class CreateFortune extends Component {
             <div>
             <p className="App-title">Create your own...
             </p>
+            <div className="card">
+            <h5 className="card-header">Create new Unfortune</h5>
             <form>
+            <div className="form-group card-body">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+              </div>
             <Input
               value={this.state.fortune}
               onChange={this.handleInputChange}
@@ -56,6 +62,7 @@ class CreateFortune extends Component {
                 Submit Fortune
               </FormBtn>
           </form>
+          </div>
             </div>
           <Footer />
           </div>
