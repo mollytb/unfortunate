@@ -16,9 +16,9 @@ class Fortune extends Component {
   }
 
   loadFortune = () => {
-    API.getFortune()
+    API.getRandomFortune()
       .then(res =>
-        this.setState({fortunes: res.data, fortune:"" })
+        this.setState({fortunes: res.data, fortune: res.data[0] })
       )
       .catch(err => console.log(err));
   };
@@ -48,7 +48,7 @@ class Fortune extends Component {
           <NavBar />
           <p className="App-title">
             </p>
-          <BrokenCookie />
+          <BrokenCookie fortune={this.state.fortune}/>
           
         <div>
         </div>

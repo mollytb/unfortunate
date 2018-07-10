@@ -12,7 +12,7 @@ module.exports = {
   findOne: function(req, res) {
       db.Fortune
       var query = { state: 'OK' };
-      var n = db.fortunes.count(query);
+      var n = db.Fortune.count(query);
       var r = Math.floor(Math.random() * n);
       var randomElement = db.fortunes.find(req.query).limit(1).skip(r)
         .find(req.query)
