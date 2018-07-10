@@ -48,7 +48,7 @@ class Fortune extends Component {
           <NavBar />
           <p className="App-title">
             </p>
-          <BrokenCookie fortune={this.state.fortune}/>
+          <BrokenCookie fortune={this.state.fortunes[0]}/>
           
         <div>
         </div>
