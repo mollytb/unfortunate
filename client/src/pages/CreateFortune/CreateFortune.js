@@ -46,8 +46,13 @@ class CreateFortune extends Component {
             <h5 className="card-header">Create new Unfortune</h5>
             <form>
             <div className="form-group card-body">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"></input>
+            <p className="card-text">Username/Email</p>
+            <Input
+                value={this.state.user}
+                onChange={this.handleInputChange}
+                name="user"
+                placeholder="email/username (required)"
+              />
               </div>
             <div className="card-body">
               <p className="card-text">Fortune text</p>
