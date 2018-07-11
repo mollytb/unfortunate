@@ -6,10 +6,17 @@
     height: auto;
     width: 100%;
 
-}.BrokenCookie {
+}
+.BrokenCookie {
     position: center;
     height: auto, center;
     width: 200px, center;
 
 
+}
+.words {
+    position: absolute;
+    text-outline: 5px;
+    top: 450ems;
+    bottom: 500ems;
 }
