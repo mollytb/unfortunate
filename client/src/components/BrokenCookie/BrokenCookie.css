@@ -1,12 +1,12 @@
 .size2{
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    margin-right: auto; */
     width: 100%;
+    height: auto;
 }
 .BrokenCookie {
-    position: relative;
+    position: absolute;
     text-align: center;
     color:black;
     /* this was the previous CSS
