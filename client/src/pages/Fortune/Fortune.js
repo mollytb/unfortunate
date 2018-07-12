@@ -7,8 +7,8 @@ import { Input, FormBtn } from "../../components/Form";
 
 class Fortune extends Component {
   state = {
-    fortunes: [],
-    fortune: "",
+    fortunes: [{}],
+    fortune: {},
   };
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class Fortune extends Component {
   loadFortune = () => {
     API.getRandomFortune()
       .then(res =>
-        this.setState({fortunes: res.data, fortune: res.data[0] })
+        this.setState({ fortune: res.data[0] })
       )
       .catch(err => console.log(err));
   };
@@ -46,17 +46,14 @@ class Fortune extends Component {
         <div>
           <div className="App">
           <NavBar />
-          <p className="App-title">
-            </p>
-          <BrokenCookie fortune={this.state.fortunes[0]}/>
-          
-        <div>
-        </div>
+            <p className="App-title"></p>
+              <BrokenCookie fortune={this.state.fortune.fortune}/>
+          </div>
           <div>
             <Footer />
           </div>
          </div>
-       </div>
+  
         );
       }
 }

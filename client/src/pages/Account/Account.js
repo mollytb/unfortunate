@@ -4,7 +4,7 @@ import BrokenCookie from "../../components/BrokenCookie";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../components/Form";
-
+import {Link} from "react-router-dom"
 class Account extends Component {
 
   render() {
@@ -14,7 +14,13 @@ class Account extends Component {
           <NavBar />
           <p className="App-title">Account page! Change me!
             </p>
+            
           <div>
+          <Link to ="/CreateFortune">
+          <div className="card">
+              <h5 className="card-header">Click here to create your own fortune</h5>
+            </div>
+            </Link>
             <div className="card">
               <h5 className="card-header">Favorite Unfortunes</h5>
               <div className="card-body">
