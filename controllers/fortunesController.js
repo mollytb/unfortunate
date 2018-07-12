@@ -10,15 +10,13 @@ module.exports = {
   },
 
   findOne: function(req, res) {
-      db.Fortune
+      console.log(db.Fortune, ' this is fortunate')
       var query = { state: 'OK' };
       var n = db.Fortune.count(query);
       var r = Math.floor(Math.random() * n);
-      var randomElement = db.fortunes.find(req.query).limit(1).skip(r)
-        .find(req.query)
+      var randomElement = db.Fortune.find(req.query).limit(1).skip(r)
         .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err))
-        console.log("TEST----> " + randomElement);
+        .catch(err => res.status(422).json(err));
   },
 
   create: function(req, res) {
