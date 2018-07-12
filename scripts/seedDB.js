@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 // This file empties the Fortunes collection and inserts the Fortunes below
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactunfortunate"
+  process.env.MONGODB_URI || "mongodb://Molly:Cookies1@ds139942.mlab.com:39942/reactunfortunate"
 );
 
 const fortuneSeed = [
