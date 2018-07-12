@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets a random fortune
   getRandomFortune: function() {
-    return axios.get("/api/fortunes");
+    return axios.get("/api/fortunes/random");
   },
   //Gets the fortune sent
   getFortune: function(id) {

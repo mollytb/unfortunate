@@ -14,8 +14,8 @@ module.exports = {
       var query = { state: 'OK' };
       var n = db.Fortune.count(query);
       var r = Math.floor(Math.random() * n);
-      var randomElement = db.Fortune.find(req.query).limit(1).skip(r)
-        .then(dbModel => res.json(dbModel))
+      var randomElement = db.Fortune.find(req.query).skip(r).limit(1)
+        .then(dbModel => res.json(dbModel[0]))
         .catch(err => res.status(422).json(err));
   },
 
