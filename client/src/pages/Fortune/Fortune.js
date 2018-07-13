@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar";
 import BrokenCookie from "../../components/BrokenCookie";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
-import { Input, FormBtn } from "../../components/Form";
+
 
 class Fortune extends Component {
   state = {
@@ -21,7 +21,7 @@ class Fortune extends Component {
         console.log(res.data)
         this.setState({ fortune: res.data.fortune })
       })
-      .catch(err => console.log(err));
+      .catch(err => console.log("problem with API call getRandomFortune"));
   };
 
   handleInputChange = event => {
@@ -47,18 +47,14 @@ class Fortune extends Component {
         <div>
           <div className="App">
           <NavBar />
-<<<<<<< HEAD
+
           <p className="App-title">
             </p>
           <BrokenCookie fortune={this.state.fortune}/>
 
-        <div>
-        </div>
-=======
-            <p className="App-title"></p>
-              <BrokenCookie fortune={this.state.fortune.fortune}/>
+          
           </div>
->>>>>>> master
+
           <div>
             <Footer />
           </div>

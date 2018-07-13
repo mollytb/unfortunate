@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CreateFortune from "./pages/CreateFortune";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
+
 import Fortune from "./pages/Fortune";
 
 import './App.css';
