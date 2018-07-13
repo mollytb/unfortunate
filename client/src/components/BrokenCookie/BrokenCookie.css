@@ -1,22 +1,26 @@
-
 .size2{
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    margin-right: auto; */
     width: 100%;
-
+    height: auto;
 }
 .BrokenCookie {
+    position: absolute;
+    text-align: center;
+    color:black;
+    /* this was the previous CSS
     position: center;
     height: auto, center;
-    width: 200px, center;
-
-
+    width: 200px, center; */
 }
-.words {
+
+/* fits on cookie in mobile mode only */
+.centered {
     position: absolute;
-    text-outline: 5px;
-    top: 450ems;
-    bottom: 500ems;
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bolder;
 }

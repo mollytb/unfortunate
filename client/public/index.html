@@ -27,6 +27,22 @@
     <title>Unfortunate</title>
   </head>
   <body class="App-body">
+      <script src="node_modules/firebaseui/dist/firebaseui.js"></script>
+      <link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
+      <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBg0zqcQPsDieHmoqv2Hs1qO0EfcfVTxVg",
+          authDomain: "unfortunatecookies-8e40c.firebaseapp.com",
+          databaseURL: "https://unfortunatecookies-8e40c.firebaseio.com",
+          projectId: "unfortunatecookies-8e40c",
+          storageBucket: "unfortunatecookies-8e40c.appspot.com",
+          messagingSenderId: "514339465105"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+      </script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
