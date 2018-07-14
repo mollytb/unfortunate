@@ -12,8 +12,7 @@ class Account extends Component {
       <div>
         <div className="App">
           <NavBar />
-          <p className="App-title">Account page! Change me!
-            </p>
+          <p className="App-title"></p>
             
           <div>
           <Link to ="/CreateFortune">
