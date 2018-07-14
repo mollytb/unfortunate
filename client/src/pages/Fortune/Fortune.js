@@ -48,6 +48,7 @@ class Fortune extends Component {
         return (
         <div>
           <div className="App">
+<<<<<<< HEAD
           <NavBar />
 
           <p className="App-title">
@@ -61,6 +62,12 @@ class Fortune extends Component {
        
         
          
+=======
+            <NavBar />
+            <p className="App-title"></p>
+            <BrokenCookie fortune={this.state.fortune}/>
+          </div>
+>>>>>>> 36ce124bcc10836de18dd351d5c6fb65effbd52a
           <div>
             <Footer />
           </div>

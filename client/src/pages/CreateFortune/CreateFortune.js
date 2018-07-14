@@ -37,41 +37,38 @@ class CreateFortune extends Component {
           <div>
             <div>
                 <NavBar />
-
             </div>
             <div>
-            <p className="App-title">Create your own...
-            </p>
-            <div className="card">
-            <h5 className="card-header">Create new Unfortune</h5>
-            <form>
-            <div className="form-group card-body">
-            <p className="card-text">Username/Email</p>
-            <Input
-                value={this.state.user}
-                onChange={this.handleInputChange}
-                name="user"
-                placeholder="email/username (required)"
-              />
+              <p className="App-title">Create your own...</p>
+              <div className="card">
+                <h5 className="card-header">Create new Unfortune</h5>
+                  <form>
+                    <div className="form-group card-body">
+                      <p className="card-text">Username/Email</p>
+                      <Input
+                        value={this.state.user}
+                        onChange={this.handleInputChange}
+                        name="user"
+                        placeholder="email/username (required)"
+                      />
+                    </div>
+                    <div className="card-body">
+                      <p className="card-text">Fortune text</p>
+                      <Input
+                        value={this.state.fortune}
+                        onChange={this.handleInputChange}
+                        name="fortune"
+                        placeholder="Some cynical wit (required)"
+                        />
+                    </div>
+                    <FormBtn
+                      disabled={!(this.state.fortune)}
+                      onClick={this.handleFormSubmit}>
+                      Submit Fortune
+                    </FormBtn>
+                  </form>
+                </div>
               </div>
-            <div className="card-body">
-              <p className="card-text">Fortune text</p>
-            <Input
-              value={this.state.fortune}
-              onChange={this.handleInputChange}
-              name="fortune"
-              placeholder="Some cynical wit (required)"
-              />
-            </div>
-            <FormBtn
-              disabled={!(this.state.fortune)}
-              onClick={this.handleFormSubmit}
-              >
-                Submit Fortune
-              </FormBtn>
-          </form>
-          </div>
-            </div>
           <Footer />
           </div>
         );

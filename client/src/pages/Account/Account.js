@@ -12,13 +12,12 @@ class Account extends Component {
       <div>
         <div className="App">
           <NavBar />
-          <p className="App-title"></p>
-            
+          <p className="App-title"></p>    
           <div>
-          <Link to ="/CreateFortune">
-          <div className="card">
-              <h5 className="card-header">Click here to create your own fortune</h5>
-            </div>
+            <Link to ="/CreateFortune">
+              <div className="card">
+                <h5 className="card-header">Click here to create your own fortune</h5>
+              </div>
             </Link>
             <div className="card">
               <h5 className="card-header">Favorite Unfortunes</h5>
@@ -28,14 +27,14 @@ class Account extends Component {
             </div>
             <div className="card">
               <h5 className="card-header">Your Unfortunes</h5>
-              <div className="card-body">
-                <p className="card-text">Fortunes you've created will display here</p>
-              </div>
+                <div className="card-body">
+                  <p className="card-text">Fortunes you've created will display here</p>
+                </div>
             </div>
           </div>
-          </div>
-          <Footer />
-        </div >
+        </div>
+      <Footer />
+      </div >
         );
       }
     }
