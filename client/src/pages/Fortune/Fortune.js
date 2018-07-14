@@ -53,12 +53,12 @@ class Fortune extends Component {
                 <BrokenCookie fortune={this.state.fortune}/>
                 <SaveButton />
                 <SendButton />
-            </div>            
-            <div>
-              <Footer />
+              <div>
+                <Footer />
+              </div>
             </div>
          </div>
-  
+
         );
       }
 }
