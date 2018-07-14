@@ -6,6 +6,8 @@
     position: absolute;
     text-align: center;
     color:black;
+    flex-direction: column;
+    justify-content: space-between;  
 }
 .centered {
     position: absolute;
