@@ -1,7 +1,4 @@
 .size2{
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     width: 100%;
     height: auto;
 }
@@ -9,13 +6,7 @@
     position: absolute;
     text-align: center;
     color:black;
-    /* this was the previous CSS
-    position: center;
-    height: auto, center;
-    width: 200px, center; */
 }
-
-/* fits on cookie in mobile mode only */
 .centered {
     position: absolute;
     top: 45%;
