@@ -6,7 +6,9 @@ import { Input, FormBtn } from "../../components/Form";
 
 class CreateFortune extends Component {
     state = {
-        fortunes: []
+        fortunes: [],
+        fortune: "",
+        user: ""
     };
     componentDidMount () {
         this.loadFortune();
@@ -24,9 +26,10 @@ class CreateFortune extends Component {
     };
     handleFormSubmit = event => {
       event.preventDefault();
-      if (this.state.fortune) {
+      if (this.state.fortune && this.state.user) {
         API.saveFortune({
-          fortune: this.state.fortune
+          fortune: this.state.fortune,
+          user: this.state.user
         })
           .then(res => this.loadFortune())
           .catch(err => console.log(err));

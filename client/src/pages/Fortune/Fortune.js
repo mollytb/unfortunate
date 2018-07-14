@@ -54,9 +54,9 @@ class Fortune extends Component {
                 <SaveButton />
                 <SendButton />
             </div>            
-              <div>
-                <Footer />
-              </div>
+            <div>
+              <Footer />
+            </div>
          </div>
   
         );

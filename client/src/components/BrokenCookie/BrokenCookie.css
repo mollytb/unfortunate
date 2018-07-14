@@ -6,8 +6,6 @@
     position: absolute;
     text-align: center;
     color:black;
-    flex-direction: column;
-    justify-content: space-between;  
 }
 .centered {
     position: absolute;
@@ -16,4 +14,5 @@
     transform: translate(-50%, -50%);
     color: black;
     font-weight: bolder;
+    word-break: keep-all;
 }
