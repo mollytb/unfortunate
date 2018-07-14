@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 import BrokenCookie from "../../components/BrokenCookie";
+import SaveButton from "../../components/SaveButton";
+import SendButton from "../../components/SendButton";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 
@@ -51,10 +53,14 @@ class Fortune extends Component {
           <p className="App-title">
             </p>
           <BrokenCookie fortune={this.state.fortune}/>
-
+          <SaveButton />
+          <SendButton />
           
           </div>
 
+       
+        
+         
           <div>
             <Footer />
           </div>
