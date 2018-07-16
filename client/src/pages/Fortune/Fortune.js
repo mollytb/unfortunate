@@ -5,7 +5,7 @@ import SaveButton from "../../components/SaveButton";
 import SendButton from "../../components/SendButton";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
-
+import {Link} from "react-router-dom";
 
 class Fortune extends Component {
   state = {
@@ -50,7 +50,9 @@ class Fortune extends Component {
             <div className="App">
               <NavBar />
                 <p className="App-title"></p>
+                <Link to ="/Home">
                 <BrokenCookie fortune={this.state.fortune}/>
+                </Link>
                 <SaveButton />
                 <SendButton />
               <div>

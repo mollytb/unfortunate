@@ -9,9 +9,9 @@ const BrokenCookie = (props) => (
 
     <div className="BrokenCookie">
         <p className="centered">{props.fortune}</p> 
-        <Link to ="/Home">
+        
     <img className="size2" src={logo2}  alt="logo" />
-    </Link>
+   
 </div>
 )
 export default BrokenCookie;

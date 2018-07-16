@@ -4,6 +4,7 @@ import Cookie from "../../components/Cookie";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../components/Form";
+import {Link} from "react-router-dom";
 
 class FortuneID extends Component {
 
@@ -14,8 +15,9 @@ class FortuneID extends Component {
           <NavBar />
           <p className="App-title">Click the cookie...
             </p>
+            <Link to="">
           <Cookie />
-
+</Link>
         <div>
         </div>
           <div>
