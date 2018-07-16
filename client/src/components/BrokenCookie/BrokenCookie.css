@@ -3,17 +3,16 @@
     height: auto;
 }
 .BrokenCookie {
-    position: absolute;
+    position: relative;
     text-align: center;
     color:black;
-    flex-direction: column;
-    justify-content: space-between;  
 }
 .centered {
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 38%;
     transform: translate(-50%, -50%);
     color: black;
     font-weight: bolder;
+    word-break: keep-all;
 }

@@ -46,25 +46,19 @@ class Fortune extends Component {
 
     render() {
         return (
-        <div>
-          <div className="App">
-
-          <NavBar />
-
-          <p className="App-title">
-            </p>
-          <BrokenCookie fortune={this.state.fortune}/>
-          <SaveButton />
-          <SendButton />
-          
-          </div>
-
-             
- <div>
-            <Footer />
-          </div>
+          <div>
+            <div className="App">
+              <NavBar />
+                <p className="App-title"></p>
+                <BrokenCookie fortune={this.state.fortune}/>
+                <SaveButton />
+                <SendButton />
+              <div>
+                <Footer />
+              </div>
+            </div>
          </div>
-  
+
         );
       }
 }
