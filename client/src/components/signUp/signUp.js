@@ -6,6 +6,8 @@ import {
   ControlLabel
 } from "react-bootstrap";
 import "./SignUp.css";
+import NavBar from  "../NavBar/NavBar"
+;
 
 class SignUp extends Component {
   constructor(props) {
@@ -41,6 +43,12 @@ class SignUp extends Component {
 
   handleSubmit = async event => {
     event.preventDefault();
+    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+    });
 
     this.setState({ isLoading: true });
 
@@ -74,10 +82,12 @@ class SignUp extends Component {
 
   renderForm() {
     return (
+      <div>
+       <NavBar/>
       <form onSubmit={this.handleSubmit}>
         <FormGroup controlId="email" bsSize="large">
           <ControlLabel>Email</ControlLabel>
-          <FormControl
+          <FormControl 
             autoFocus
             type="email"
             value={this.state.email}
@@ -86,7 +96,7 @@ class SignUp extends Component {
         </FormGroup>
         <FormGroup controlId="password" bsSize="large">
           <ControlLabel>Password</ControlLabel>
-          <FormControl
+          <FormControl id="txtPassword"
             value={this.state.password}
             onChange={this.handleChange}
             type="password"
@@ -100,7 +110,14 @@ class SignUp extends Component {
             type="password"
           />
         </FormGroup>
+      
+        <button className="buttonType" name="btnSignUp" type="submit" value="HTML">Sign Up</button>
+        <button className="buttonType" name="btnLogin" type="submit" value="HTML">Log In</button>
+        <button className="buttonType" name="btnLogout" type="submit" value="HTML">Log Out</button>
+
+    
       </form>
+      </div>
     );
   }
 
