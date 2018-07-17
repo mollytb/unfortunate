@@ -1,11 +1,8 @@
 //stuff for FortuneText component
 import React from "react";
-import "./FortuneText.css";
 
-const FortuneText = props => (
-  <ul className="">
-    <li>{props.fortune}</li>
-  </ul>
+export const FortuneText = props => (
+    <li className="list-group-item">
+    {props.children}
+    </li>
 );
-
-export default FortuneText;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
-import FortuneText from "../../components/FortuneText";
+import {List, FortuneText} from "../../components/FortuneText";
 import { Input, FormBtn } from "../../components/Form";
 import {Link} from "react-router-dom"
 class Account extends Component {
@@ -12,15 +12,15 @@ class Account extends Component {
         user: ""
     };
     componentDidMount () {
-        this.loadFortune();
+        this.loadFortunes();
     };
-    loadFortune = () => {
-      API.getRandomFortune()
+    loadFortunes = () => {
+      API.getFortunes()
         .then(res =>{
           console.log(res.data)
-          this.setState({ fortune: res.data.fortune })
+          this.setState({ fortune: res.data.fortunes })
         })
-        .catch(err => console.log("problem with API call getRandomFortune"));
+        .catch(err => console.log("problem with API call getFortunes"));
     };
 
   render() {
@@ -44,9 +44,19 @@ class Account extends Component {
             <div className="card">
               <h5 className="card-header">Your Unfortunes</h5>
                 <div className="card-body">
-                <FortuneText fortune={this.state.fortune}>
-                  <li className="card-text" > Fortunes you've created will display here</li>
-                  </FortuneText>
+                {this.state.fortunes.length ? (
+                  <List>
+                    {this.state.fortunes.map(fortune => {
+                      return (
+                        <FortuneText className="card-text" key = {fortune.id}>
+                        {fortune}}
+                        </FortuneText>
+                      );
+                    })}
+                    </List>
+                ) : (
+                  <p> <strong>No Results to Display </strong> </p>
+                )}
                 </div>
             </div>
           </div>

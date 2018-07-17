@@ -1,6 +1,10 @@
 import axios from "axios";
 
 export default {
+  // Gets all fortunes
+  getFortunes: function () {
+    return axios.get("/api/fortunes");
+  },
   // Gets a random fortune
   getRandomFortune: function() {
     return axios.get("/api/fortunes/random");

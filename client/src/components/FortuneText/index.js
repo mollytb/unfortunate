@@ -1,1 +1,2 @@
-export { default } from "./FortuneText";
+export * from "./List";
+export * from "./FortuneText";
