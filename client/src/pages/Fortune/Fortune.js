@@ -14,10 +14,14 @@ class Fortune extends Component {
   };
 
   componentDidMount() {
-    this.loadFortune();
+    if (1 == 2 ) {
+    this.loadSpecificFortune();}
+    else {
+    this.loadRandomFortune();
+    }
   }
 
-  loadFortune = () => {
+  loadRandomFortune = () => {
     API.getRandomFortune()
       .then(res =>{
         console.log(res.data)
@@ -25,6 +29,15 @@ class Fortune extends Component {
       })
       .catch(err => console.log("problem with API call getRandomFortune"));
   };
+  loadSpecificFortune = (id) => {
+    API.getFortune()
+    .then(res =>{
+      console.log(res.data)
+      this.setState({ fortune: res.data.fortune })
+    })
+    .catch(err => console.log("problem with API call getSpecificFortune"));
+
+  }
 
   handleInputChange = event => {
     const { name, value } = event.target;

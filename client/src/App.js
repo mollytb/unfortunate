@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CreateFortune from "./pages/CreateFortune";
+import FortuneID from "./pages/FortuneID";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 
@@ -22,6 +23,7 @@ const App = () => (
         <Route exact path="/Fortune" component={Fortune} />
         <Route exact path="/Account" component={Account} />
         <Route exact path="/CreateFortune" component={CreateFortune} />
+        <Route exact path="/FortuneID" component={FortuneID} />
         <Route component={Home} />
       </Switch>
     </div>
