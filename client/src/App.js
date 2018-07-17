@@ -7,13 +7,14 @@ import FortuneID from "./pages/FortuneID";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 
+
 import Fortune from "./pages/Fortune";
 
 import './App.css';
 //import Footer from "./components/Footer";
 //import Cookie from "./components/Cookie";
 //import BrokenCookie from "./components/BrokenCookie";
-import SignUp from "./components/SignUp";
+
 
 const App = () => (
   <Router>
@@ -24,7 +25,6 @@ const App = () => (
         <Route exact path="/Fortune" component={Fortune} />
         <Route exact path="/Account" component={Account} />
         <Route exact path="/CreateFortune" component={CreateFortune} />
-        <Route exact path="/SignUp" component={SignUp} />
         <Route exact path="/FortuneID" component={FortuneID} />
         <Route component={Home} />
       </Switch>

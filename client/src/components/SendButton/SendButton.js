@@ -2,11 +2,11 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 const SendButton = props => (
-   
+   <div>
     <button className="btn btn-primary">Send</button>
-    //set up a funtion that creates a link to send others with the current fortune attached
-    //key={fortunes._id}
-    //<a href={'/Home/' + fortune._id}></a>
+ 
+    <textarea>{'/Home/' + props.fortune._id}</textarea>
+    </div>
 );
 
 export default SendButton;

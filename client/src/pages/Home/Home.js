@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../../components/NavBar";
 import Cookie from "../../components/Cookie";
 import Footer from "../../components/Footer";
+
 import API from "../../utils/API";
 import { Input, FormBtn } from "../../components/Form";
 import {Link} from "react-router-dom";
@@ -13,6 +14,7 @@ class Home extends Component {
         <div>
           <div className="App">
           <NavBar />
+         
           <p className="App-title">Click the cookie...
             </p>
             <Link to ="/Fortune">
