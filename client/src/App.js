@@ -6,8 +6,11 @@ import CreateFortune from "./pages/CreateFortune";
 import FortuneID from "./pages/FortuneID";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 import Fortune from "./pages/Fortune";
 
 import './App.css';
@@ -19,7 +22,7 @@ import './App.css';
 const App = () => (
   <Router>
     <div>
-  
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/Fortune" component={Fortune} />

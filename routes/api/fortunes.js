@@ -4,9 +4,9 @@ const fortunesController = require("../../controllers/fortunesController");
 // Matches with "/api/fortunes"
 router.route("/")
   .get(fortunesController.findAll)
-  .post(fortunesController.create);
+  .post(fortunesController.saveFortune);
 
 router.route("/random")
-.get(fortunesController.findOne)
+  .get(fortunesController.findOne)
 
 module.exports = router;

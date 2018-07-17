@@ -3,19 +3,21 @@ import NavBar from "../../components/NavBar";
 import API from "../../utils/API";
 import Footer from "../../components/Footer";
 import { Input, FormBtn } from "../../components/Form";
+import Modal from "../../Modal"
 
 class CreateFortune extends Component {
     state = {
         fortunes: [],
         fortune: "",
-        user: ""
+        user: "",
+        showModal: false
     };
     componentDidMount () {
         this.loadFortune();
     };
-    loadFortune = () => {
-        API.getFortune()
-        .then(res => this.setState({ fortune: res.data}))
+    loadFortune = (id) => {
+        API.getFortune(id)
+        .then(res => this.setState({ fortune: res.data }))
         .catch(err=> console.log(err));
     };
     handleInputChange = event => {
@@ -31,10 +33,17 @@ class CreateFortune extends Component {
           fortune: this.state.fortune,
           user: this.state.user
         })
-          .then(res => this.loadFortune())
+          .then(res => this.setState({showModal: true}))
           .catch(err => console.log(err));
       }
     };
+
+    // Required by modal. Passed as prop.
+    onModalClose = () => {
+      this.setState({
+        showModal: false
+      })
+    }
     render () {
         return (
           <div>
@@ -45,6 +54,8 @@ class CreateFortune extends Component {
               <p className="App-title">Create your own...</p>
               <div className="card">
                 <h5 className="card-header">Create new Unfortune</h5>
+                {this.state.showModal ? <Modal onClose={this.onModalClose}
+                fortune={this.state.fortune} show={this.state.showModal} /> :
                   <form>
                     <div className="form-group card-body">
                       <p className="card-text">Username/Email</p>
@@ -70,6 +81,7 @@ class CreateFortune extends Component {
                       Submit Fortune
                     </FormBtn>
                   </form>
+                }
                 </div>
               </div>
           <Footer />
