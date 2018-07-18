@@ -61,12 +61,12 @@ class CreateFortune extends Component {
                 fortune={this.state.fortune} show={this.state.showModal} /> :
                   <form>
                     <div className="form-group card-body">
-                      <p className="card-text">Username/Email</p>
+                      <p className="card-text">Username</p>
                       <Input
                         value={this.state.user}
                         onChange={this.handleInputChange}
                         name="user"
-                        placeholder="email/username (required)"
+                        placeholder="username (required)"
                       />
                     </div>
                     <div className="card-body">

@@ -68,7 +68,6 @@ class Fortune extends Component {
                 </Link>
                 <SaveButton />
                 <SendButton fortune={this.state.fortune}/>
-                
 
               <div>
                 <Footer />
