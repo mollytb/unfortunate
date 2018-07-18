@@ -1,12 +1,24 @@
-import React from "react";
-import {Link} from "react-router-dom";
 
-const SendButton = props => (
-   <div>
-    <button className="btn btn-primary">Send</button>
- 
-    <textarea>{'/Home/' + props.fortune._id}</textarea>
-    </div>
-);
+import React, { Component } from "react";
+import {Link} from "react-router-dom";
+class SendButton extends Component {
+  state = {
+    isOpen: false
+    
+  };
+  onClick = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
+  render() {
+    return (
+      <div>
+       <button className="btn btn-primary" onClick={this.onClick}>Send</button>
+       <textarea className={this.state.isOpen? null:"hidden"} value={'/Home/' + this.props.fortune._id}></textarea>
+      </div>
+    )
+  }
+}
 
 export default SendButton;
