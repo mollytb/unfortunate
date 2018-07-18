@@ -3,7 +3,7 @@ import React from "react";
 import "./NavBar.css";
 
 const NavBar = () => (
-  <nav className="navbar navbar-expand-lg navbar-light ">
+  <nav className="navbar navbar-expand-md navbar-light ">
     <a className="navbar-brand" href="Home">Unfortunate</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

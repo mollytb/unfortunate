@@ -29,10 +29,13 @@ class CreateFortune extends Component {
     handleFormSubmit = event => {
       event.preventDefault();
       if (this.state.fortune && this.state.user) {
-        API.saveFortune({
+        var inputs = {
           fortune: this.state.fortune,
           user: this.state.user
-        })
+        }
+        this.state.fortune = "";
+        this.state.user = "";
+        API.saveFortune(inputs)
           .then(res => this.setState({showModal: true}))
           .catch(err => console.log(err));
       }
