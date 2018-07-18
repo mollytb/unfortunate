@@ -3,7 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CreateFortune from "./pages/CreateFortune";
-import FortuneID from "./pages/FortuneID";
+
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import Fortune from "./pages/Fortune";

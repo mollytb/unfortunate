@@ -17,7 +17,7 @@ class Account extends Component {
       API.getFortunes()
         .then(res =>{
           console.log(res.data)
-          this.setState({ fortune: res.data.fortunes })
+          this.setState({ fortunes: res.data, fortune: "" })
         })
         .catch(err => console.log("problem with API call getFortunes"));
     };
@@ -34,12 +34,12 @@ class Account extends Component {
                 <h5 className="card-header">Click here to create your own fortune</h5>
               </div>
             </Link>
-            <div className="card">
-              <h5 className="card-header">Favorite Unfortunes</h5>
-              <div className="card-body">
-                <p className="card-text">Dynamically add favortied fortunes??</p>
-              </div>
-            </div>
+            {/* <div className="card"> */}
+              {/* <h5 className="card-header">Favorite Unfortunes</h5> */}
+              {/* <div className="card-body"> */}
+                {/* <p className="card-text">Dynamically add favortied fortunes??</p> */}
+              {/* </div> */}
+            {/* </div> */}
             <div className="card">
               <h5 className="card-header">Your Unfortunes</h5>
                 <div className="card-body">
@@ -47,14 +47,18 @@ class Account extends Component {
                   <List>
                     {this.state.fortunes.map(fortune => {
                       return (
-                        <FortuneText className="card-text" key = {fortune.id}>
-                        {fortune}}
+                        <div className="card-text" >
+                        <FortuneText key={fortune._id}>
+                        <strong>
+                        {fortune.fortune}
+                        </strong>
                         </FortuneText>
+                    </div>
                       );
                     })}
                     </List>
                 ) : (
-                  <p> <strong>No Results to Display </strong> </p>
+                  <h3>No Results to Display</h3>
                 )}
                 </div>
             </div>
