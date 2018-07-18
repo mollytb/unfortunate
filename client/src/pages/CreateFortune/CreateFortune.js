@@ -33,8 +33,8 @@ class CreateFortune extends Component {
           fortune: this.state.fortune,
           user: this.state.user
         }
-        this.state.fortune = "";
-        this.state.user = "";
+        this.setState.fortune = "";
+        this.setState.user = "";
         API.saveFortune(inputs)
           .then(res => this.setState({showModal: true}))
           .catch(err => console.log(err));

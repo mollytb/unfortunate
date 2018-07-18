@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import {List, FortuneText} from "../../components/FortuneText";
-import { Input, FormBtn } from "../../components/Form";
+
 import {Link} from "react-router-dom"
 class Account extends Component {
   state = {

@@ -3,8 +3,8 @@ import NavBar from "../../components/NavBar";
 import Cookie from "../../components/Cookie";
 import Footer from "../../components/Footer";
 
-import API from "../../utils/API";
-import { Input, FormBtn } from "../../components/Form";
+
+
 import {Link} from "react-router-dom";
 
 class Home extends Component {

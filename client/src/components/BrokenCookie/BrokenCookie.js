@@ -3,7 +3,7 @@
 import React from "react";
 import logo2 from './cookie_right_paper.png';
 import "./BrokenCookie.css";
-import {Link} from "react-router-dom";
+
 
 const BrokenCookie = (props) => (
 
