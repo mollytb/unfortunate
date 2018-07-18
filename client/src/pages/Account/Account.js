@@ -3,7 +3,6 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import API from "../../utils/API";
 import {List, FortuneText} from "../../components/FortuneText";
-import { Input, FormBtn } from "../../components/Form";
 import {Link} from "react-router-dom"
 class Account extends Component {
   state = {
@@ -28,7 +27,7 @@ class Account extends Component {
       <div>
         <div className="App">
           <NavBar />
-          <p className="App-title"></p>    
+          <p className="App-title"></p>
           <div>
             <Link to ="/CreateFortune">
               <div className="card">
@@ -66,5 +65,5 @@ class Account extends Component {
         );
       }
     }
-    
+
 export default Account;

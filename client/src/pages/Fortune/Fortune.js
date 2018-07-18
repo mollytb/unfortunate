@@ -14,7 +14,7 @@ class Fortune extends Component {
   };
 
   componentDidMount() {
-    if (1 == 2 ) {
+    if (1 === 2 ) {
     this.loadSpecificFortune();}
     else {
     this.loadRandomFortune();
@@ -68,7 +68,7 @@ class Fortune extends Component {
                 </Link>
                 <SaveButton />
                 <SendButton fortune={this.state.fortune}/>
-                
+
               <div>
                 <Footer />
               </div>
