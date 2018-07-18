@@ -14,7 +14,7 @@ class Home extends Component {
         <div>
           <div className="App">
           <NavBar />
-         
+
           <p className="App-title">Click the cookie...
             </p>
             <Link to ="/Fortune">
