@@ -11,7 +11,7 @@ const NavBar = () => (
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
+        <li className="nav-item">
           <a className="nav-link" href="Home">Home</a>
         </li>
         <li className="nav-item">
@@ -20,9 +20,9 @@ const NavBar = () => (
         <li className="nav-item">
           <a className="nav-link" href="CreateFortune">Create</a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
           <a className="nav-link" href="SignUp">Sign Up</a>
-        </li>
+        </li> */}
      </ul>
     </div>
 </nav>
