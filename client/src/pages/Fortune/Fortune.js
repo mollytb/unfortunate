@@ -34,7 +34,7 @@ class Fortune extends Component {
     API.getFortune()
     .then(res =>{
       console.log(res.data)
-      this.setState({ fortune: res.data.fortune })
+      this.setState({ fortune: res.data.fortune, id: res.data.id })
     })
     .catch(err => console.log("problem with API call getSpecificFortune"));
 
@@ -70,8 +70,7 @@ class Fortune extends Component {
                 </Link>
                
                 <SendButton _id={this.state._id}/>
-
-
+                {/* <a href="mailto:someone@example.com?&subject=A%20Fortune%20For%20You&body=Here%20is%20your%20fortune%20!" target="_top">Send</a> */}
               <div>
                 <Footer />
               </div>

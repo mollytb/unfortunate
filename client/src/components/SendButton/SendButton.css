@@ -1,11 +1,17 @@
-.btn {
+/* .btn {
     flex-direction: column;
     justify-content: space-between;
-}
-.hidden{
+} */
+/* .hidden{
     display: none;
-}
+} */
 
-textarea {
+/* textarea {
     color: black;
+} */
+
+button {
+    outline-style: solid;
+    border: 1px solid black;
+    text-align: center;
 }

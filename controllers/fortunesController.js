@@ -10,6 +10,13 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
+  findById: function(req, res) {
+    db.Fortune
+      .findById(req.params.id)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
+
   findOne: function(req, res) {
       console.log(db.Fortune, ' this is fortunate')
       var query = { state: 'OK' };
