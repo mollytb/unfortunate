@@ -27,6 +27,7 @@ const App = () => (
         <Route component={Home} />
       </Switch>
     </div>
+   
   </Router>
 );
 export default App;

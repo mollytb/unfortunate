@@ -11,6 +11,7 @@ class Fortune extends Component {
   state = {
     fortunes: [{}],
     fortune: "",
+    _id: "",
   };
 
   componentDidMount() {
@@ -67,7 +68,7 @@ class Fortune extends Component {
                 <BrokenCookie fortune={this.state.fortune}/>
                 </Link>
                
-                <SendButton fortune={this.state.fortune}/>
+                <SendButton fortune={this.state.fortune._id}/>
 
               <div>
                 <Footer />

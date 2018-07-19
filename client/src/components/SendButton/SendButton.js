@@ -1,12 +1,12 @@
-import "./SendButton.css";
-import React, { Component } from "react";
 
+import React, { Component } from "react";
+import "./SendButton.css";
 class SendButton extends Component {
   state = {
     isOpen: false
     
   };
-  onClick = () => {
+  onClick = () =>{
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -15,7 +15,7 @@ class SendButton extends Component {
     return (
       <div>
        <button className="btn btn-primary" onClick={this.onClick}>Send</button>
-       <textarea className={this.state.isOpen? null:"hidden"} value={'/Home/' + this.props.fortune._id}></textarea>
+       <textarea className={this.state.isOpen? null:"hidden"} value={"Copy Link to send " + '/Home/' + this.props.fortune}></textarea>
       </div>
     )
   }
