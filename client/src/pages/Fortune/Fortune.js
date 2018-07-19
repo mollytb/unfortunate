@@ -69,7 +69,8 @@ class Fortune extends Component {
                 <BrokenCookie fortune={this.state.fortune}/>
                 </Link>
                
-                <SendButton _id={this.state._id}/>
+                <SendButton fortune={this.state.fortune}/>
+                {/* _id={this.state._id */}
                 {/* <a href="mailto:someone@example.com?&subject=A%20Fortune%20For%20You&body=Here%20is%20your%20fortune%20!" target="_top">Send</a> */}
               <div>
                 <Footer />
