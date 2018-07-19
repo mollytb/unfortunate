@@ -15,7 +15,7 @@ class SendButton extends Component {
     return (
       <div>
        <button className="btn btn-primary" onClick={this.onClick}>Send</button>
-       <textarea className={this.state.isOpen? null:"hidden"} value={"Copy Link to send " + '/Home/' + this.props.fortune}></textarea>
+       <textarea className={this.state.isOpen? null:"hidden"} value={"Copy Link to send " + '/Home/' + this.props._id}></textarea>
       </div>
     )
   }

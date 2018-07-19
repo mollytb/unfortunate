@@ -11,7 +11,7 @@ class Fortune extends Component {
   state = {
     fortunes: [{}],
     fortune: "",
-    _id: "",
+    _id: ""
   };
 
   componentDidMount() {
@@ -26,7 +26,7 @@ class Fortune extends Component {
     API.getRandomFortune()
       .then(res =>{
         console.log(res.data)
-        this.setState({ fortune: res.data.fortune })
+        this.setState({ fortune: res.data.fortune, _id: res.data._id })
       })
       .catch(err => console.log("problem with API call getRandomFortune"));
   };
@@ -59,6 +59,7 @@ class Fortune extends Component {
   };
 
     render() {
+      console.log(this.state.fortune["_id"])
         return (
           <div>
             <div className="App">
@@ -68,7 +69,8 @@ class Fortune extends Component {
                 <BrokenCookie fortune={this.state.fortune}/>
                 </Link>
                
-                <SendButton fortune={this.state.fortune._id}/>
+                <SendButton _id={this.state._id}/>
+
 
               <div>
                 <Footer />
