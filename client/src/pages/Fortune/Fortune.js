@@ -81,6 +81,7 @@ class Fortune extends Component {
                 <SendButton fortune={this.state.fortune}/>
                 {/* _id={this.state._id */}
                 {/* <a href="mailto:someone@example.com?&subject=A%20Fortune%20For%20You&body=Here%20is%20your%20fortune%20!" target="_top">Send</a> */}
+                <br></br>
               <div>
                 <Footer />
               </div>

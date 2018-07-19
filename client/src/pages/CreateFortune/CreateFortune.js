@@ -54,7 +54,7 @@ class CreateFortune extends Component {
                 <NavBar />
             </div>
             <div>
-              <p className="App-title">Create your own...</p>
+              <p className="App-title"></p>
               <div className="card">
                 <h5 className="card-header">Create new Unfortune</h5>
                 {this.state.showModal ? <Modal onClose={this.onModalClose}
