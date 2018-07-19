@@ -15,7 +15,16 @@ class Fortune extends Component {
   };
 
   componentDidMount() {
-    if (1 === 2 ) {
+    var url = window.location.href;
+
+    var regex = /[?&]([^=#]+)=([^&#]*)/g,
+      params = {},
+      match;
+    while (match = regex.exec(url)) {
+      params[match[1]] = match[2];
+}
+    console.log(params)
+    if (params === 5 ) {
     this.loadSpecificFortune();}
     else {
     this.loadRandomFortune();
@@ -59,7 +68,7 @@ class Fortune extends Component {
   };
 
     render() {
-      console.log(this.state.fortune["_id"])
+      //console.log(this.state.fortune["_id"])
         return (
           <div>
             <div className="App">

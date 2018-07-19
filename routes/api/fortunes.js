@@ -7,6 +7,9 @@ router.route("/")
   .post(fortunesController.saveFortune);
 
 router.route("/random")
-  .get(fortunesController.findOne)
+  .get(fortunesController.findOne);
+
+router.route("/Home/" + _id)
+  .get(fortunesController.findById)
 
 module.exports = router;

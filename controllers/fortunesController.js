@@ -18,7 +18,7 @@ module.exports = {
   },
 
   findOne: function(req, res) {
-      console.log(db.Fortune, ' this is fortunate')
+      //console.log(db.Fortune, ' this is fortunate')
       var query = { state: 'OK' };
       var n = db.Fortune.count(query);
       var r = Math.floor(Math.random() * n);

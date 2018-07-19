@@ -11,7 +11,7 @@ export default {
   },
   //Gets the fortune sent
   getFortune: function(id) {
-    return axios.get("/api/fortunes/" + id);
+    return axios.get("/api/fortunes/Home/" + id);
   },
   // Saves a fortune to the database
   saveFortune: function(fortuneData) {
